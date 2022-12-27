@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        *{
+            margin: 0vw;
+            padding: 0vw;
+            background-color: black;
+        }
+
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vw;
+        }
+
+        #search{
+            color: #6600a9;
+            font-size: 2.5vw;
+            background-color: #fff;
+            padding: 0.4vw;
+            border-radius: 5vw;
+            position: relative;
+            transition: all 1s;
+        }
+
+        #input{
+            background: #6600a9;
+            padding: 0.5vw;
+            border-radius: 50vh;
+            width: 3.4vw;
+            height: 3.3vw;
+            position: relative;
+            left: 4.2vw;
+            bottom: 0.5vw;
+            transition: all 1s;
+        }
+
+        ::placeholder, #input{
+            color: #fff;
+            font-size: 1vw;
+            font-family: sans-serif;
+        }
+
+        #main2:hover input{
+            width: 20vw;
+        }
+
+        #main2:hover search{
+            background-color: #6600a9;
+            color: #fff;
+            font-size: 2vw;
+            bottom: 0.4vw;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="main">
+        <span id="main2">
+            <input type="text" id="input" placeholder="Search">
+            <i id="search" class="fa fa-search"></i>
+        </span>
+    </div>
+
+</body>
+</html>
